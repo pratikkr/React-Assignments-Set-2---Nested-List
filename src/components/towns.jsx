@@ -1,17 +1,7 @@
 import React from "react";
 
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
+import "../styles/App.css";
 
 export default function Towns(props) {
-  return (
-    <List>
-      {props.towns.map((town, index) => (
-        <ListItem key={town.name} id={`town${index + 1}`}>
-          <ListItemText primary={town.name} />
-        </ListItem>
-      ))}
-    </List>
-  );
+  return <div className="townSpace">{props.town.name}</div>;
 }
